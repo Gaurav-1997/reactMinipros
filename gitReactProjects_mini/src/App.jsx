@@ -1,10 +1,22 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import React, { useState } from "react";
+import MultiSearch from "./components/MultiSearch/index";
 
 function App() {
-  return <>hello</>;
+  const data = {
+    india: "delhi",
+    france: "paris",
+    italy: "rome",
+    germany: "berlin",
+    spain: "madrid",
+    japan: "tokyo",
+  };
+
+  return (
+    <>
+      <MultiSearch data={data} />
+    </>
+  );
 }
 
 export default App;
